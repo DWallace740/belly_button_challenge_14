@@ -88,7 +88,7 @@ This project showcases how to use JavaScript, D3.js, and Plotly.js to create int
 
 ## Author
 Daena Wallace 
-This project was developed as part of Challenge 14 for a JavaScript and data visualization assignment.
+- This project was developed as part of Challenge 14 for a JavaScript and data visualization assignment.
 
 ## License
 Educational Use Only
