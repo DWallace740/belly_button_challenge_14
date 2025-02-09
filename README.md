@@ -2,13 +2,14 @@
 
 ## Overview
 This project involves building an interactive dashboard that visualizes microbial biodiversity from human belly buttons. The dataset catalogs different microbial species (operational taxonomic units, or OTUs) found in various individuals, showing that only a few microbial species are prevalent in over 70% of people.
+- The project was deployed using GitHub Pages for public access.
+    https://dwallace740.github.io/belly_button_challenge_14/
 
 The dashboard consists of:
 - A bar chart showing the top 10 most prevalent microbes.
 - A bubble chart displaying all microbial species in a sample.
 - A demographic information panel providing metadata about the selected sample.
 - A dropdown menu to select different test subjects and dynamically update all charts.
-The project was deployed using GitHub Pages for public access.
 
 ## Objective
 The goal of this challenge is to:
