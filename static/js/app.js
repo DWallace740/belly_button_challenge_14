@@ -3,7 +3,7 @@ const url_reference = "https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/sam
 
 // Build the metadata panel
 function buildMetadata(sample) {
-  d3.json("url_reference").then((data) => {
+  d3.json(url_reference).then((data) => {
 
     // get the metadata field
     let metadata = data.metadata;
@@ -71,17 +71,17 @@ function buildCharts(sample) {
     let top_otu_labels = otu_labels.slice(0, 10).reverse();
 
     // Don't forget to slice and reverse the input data appropriately
-    let yticks = otu_ids.slice(0, 10).reverse().map(id => `OTU ${id}`);
+    let yticks = top_otu_ids.map(id => `OTU ${id}`);
     
     // Build a Bar Chart
     let barTrace = {
-      x: top_sample_values.slice(0, 10).reverse(),
+      x: top_sample_values,
       y: yticks,
-      text: top_otu_labels.slice(0, 10).reverse(),
+      text: top_otu_labels,
       type: "bar",
       orientation: "h",
       marker: {
-        color: otu_ids.slice(0, 10).reverse(),
+        color:top_otu_ids,
         colorscale: "Rainbow"
       }
     };
